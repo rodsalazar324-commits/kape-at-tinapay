@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #1e1c1a;
+  font-family: "Libre Baskerville", serif;
+  color: #2b241c;
+  padding: 60px 20px;
+}
+
+/* NOT A BOX */
+.paper {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+/* HEADER */
+.header {
+  margin-bottom: 40px;
+}
+
+.header img {
+  width: 120px;
+  float: left;
+  margin: 0 20px 10px 0;
+  filter: sepia(35%) contrast(90%);
+}
+
+.welcome {
+  font-family: "Special Elite", cursive;
+  font-size: 0.85rem;
+  color: #b8a98a;
+  margin-bottom: 6px;
+}
+
+.title {
+  font-size: 2.1rem;
+  line-height: 1.2;
+  margin-bottom: 4px;
+  color: #f0e6cf;
+}
+
+.author {
+  font-style: italic;
+  color: #bfae8a;
+}
+
+/* INTRO */
+.intro {
+  clear: both;
+  margin: 40px 0 50px;
+  line-height: 1.9;
+  color: #e2d6bb;
+}
+
+.intro a {
+  color: #d6c29a;
+  text-decoration: none;
+  border-bottom: 1px dotted #d6c29a;
+}
+
+/* POEM */
+.poem p {
+  margin-bottom: 26px;
+  line-height: 2;
+  font-size: 1.05rem;
+  color: #f5edd8;
+}
+
+/* make stanzas uneven */
+.poem p:nth-child(odd) {
+  margin-left: 6px;
+}
+
+.poem p:nth-child(even) {
+  margin-left: 18px;
+}
+
+/* FOOTER */
+.footer {
+  margin-top: 60px;
+}
+
+/* BUTTON = handwritten note */
+button {
+  background: none;
+  border: none;
+  font-family: "Special Elite", cursive;
+  color: #bda77a;
+  cursor: pointer;
+  padding: 0;
+}
+
+button::before {
+  content: "↳ ";
+}
+
+button:hover {
+  opacity: 0.6;
+}
